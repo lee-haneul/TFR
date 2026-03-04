@@ -48,7 +48,7 @@
 
 
 
-h1 {
+.subsText h1{
     font-family: "Martius", sans-serif;
     font-weight: 800;
     font-style: italic;
@@ -57,7 +57,7 @@ h1 {
 
 
 
-h2 {
+.subsText h2{
     font-family: "Manrope", sans-serif;
     font-weight: 800;
     font-style: normal;
@@ -65,7 +65,7 @@ h2 {
 
 
 
-p {
+.subsText p{
     font-family: "Manrope", sans-serif;
     font-weight: 200;
     font-style: normal;
