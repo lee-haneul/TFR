@@ -59,7 +59,7 @@ html, body {
     font-family: "Martius", sans-serif;
     font-style: italic;
     font-size: 8vh;
-    height: 7%;
+    max-width: 78%;
     padding-bottom: 2vh;
     margin: 0 auto;
 }
