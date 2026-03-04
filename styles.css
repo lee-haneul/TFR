@@ -13,6 +13,9 @@
     height: 90vh;
     padding: 20px;
     background: #D9D9D9;
+    width: 78%;
+    margin: 0 auto;
+    text-align: left;
 
     clip-path: polygon(
         var(--cut) 0,                          /* after top-left cut */
@@ -40,15 +43,7 @@
 
 
 
-.subsText{
-    width: 78%;
-    margin: 0 auto;
-    text-align: left;
-}
-
-
-
-.subsText h1{
+.subsystemFrame h1{
     font-family: "Martius", sans-serif;
     font-style: italic;
     font-size: 3vh;
@@ -57,7 +52,7 @@
 
 
 
-.subsText h2{
+.subsystemFrame h2{
     font-family: "Manrope", sans-serif;
     font-weight: 800;
     font-style: normal;
@@ -65,7 +60,7 @@
 
 
 
-.subsText p{
+.subsystemFrame p{
     font-family: "Manrope", sans-serif;
     font-weight: 200;
     font-style: normal;
