@@ -55,10 +55,10 @@ html, body {
 
 
 
-#subsText h1{
+.subsText h1{
     font-family: "Martius", sans-serif;
     font-style: italic;
-    font-size: 3vh;
+    font-size: 10vh;
     height: 7%;
     margin: 0 auto;
 }
