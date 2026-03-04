@@ -1,3 +1,10 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+
+
 @font-face {
   font-family: "Martius";
   src: url("fonts/Martius-LV9L4.ttf") format("truetype");
