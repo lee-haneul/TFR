@@ -4,13 +4,22 @@
     background: #D9D9D9;
 
     clip-path: polygon(
-        0 0,                                  /* top-left */
-        calc(100% - var(--cut)) 0,             /* before top-right cut */
-        100% var(--cut),                       /* top-right chamfer */
-        100% 100%,                             /* bottom-right */
-        var(--cut) 100%,                       /* before bottom-left cut */
-        0 calc(100% - var(--cut))              /* bottom-left chamfer */
-    );
+        var(--cut) 0,                          /* after top-left cut */
+        100% 0,                                /* top-right */
+        100% calc(100% - var(--cut)),          /* before bottom-right cut */
+        calc(100% - var(--cut)) 100%,          /* bottom-right chamfer */
+        0 100%,                                /* bottom-left */
+        0 var(--cut)                           /* top-left chamfer */
+  );
+
+  -webkit-clip-path: polygon(
+        var(--cut) 0,
+        100% 0,
+        100% calc(100% - var(--cut)),
+        calc(100% - var(--cut)) 100%,
+        0 100%,
+        0 var(--cut)
+  );
 
     display: flex;
     flex-direction: column;
