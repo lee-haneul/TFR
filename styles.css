@@ -58,8 +58,9 @@ html, body {
 .subsText h1{
     font-family: "Martius", sans-serif;
     font-style: italic;
-    font-size: 7vh;
+    font-size: 8vh;
     height: 7%;
+    padding-bottom: 0.5vh;
     margin: 0 auto;
 }
 
