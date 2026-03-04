@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Martius";
+  src: url("fonts/Martius-LV9L4.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
 .subsystemFrame{
     --cut: 50px;
 
@@ -32,9 +41,9 @@
 
 
 h1 {
-    font-family: "Manrope", sans-serif;
+    font-family: "Martius", sans-serif;
     font-weight: 800;
-    font-style: normal;
+    font-style: italic;
 }
 
 
