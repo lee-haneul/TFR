@@ -62,6 +62,7 @@ html, body {
     width: 78%;
     padding-bottom: 2vh;
     margin: 0 auto;
+    text-align: left;
 }
 
 
@@ -84,4 +85,5 @@ html, body {
 
 .subsBreak hr{
     width: 78%;
+    height: 3px;
 }
