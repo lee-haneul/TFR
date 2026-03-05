@@ -49,7 +49,7 @@ html, body {
 
 .subsText{
     width: 78%;
-    margin: 0;
+    margin: 0 auto;
     text-align: left;
 }
 
