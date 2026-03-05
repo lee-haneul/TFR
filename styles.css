@@ -70,7 +70,6 @@ html, body {
     font-family: "Manrope", sans-serif;
     font-weight: 800;
     font-style: normal;
-    margin: 0;
 }
 
 
@@ -79,7 +78,6 @@ html, body {
     font-family: "Manrope", sans-serif;
     font-weight: 200;
     font-style: normal;
-    margin: 0;
 }
 
 
@@ -87,5 +85,4 @@ html, body {
 .subsBreak hr{
     width: 78%;
     height: 3px;
-    margin: 0;
 }
