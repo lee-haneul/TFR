@@ -84,7 +84,7 @@ html, body {
     height: 3px;
     background-color: #333;
     border: none;
-    margin: 0;
+    margin: -10px 0 -10px 0;
 }
 
 .subsText hr{
