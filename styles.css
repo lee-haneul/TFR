@@ -48,7 +48,6 @@ html, body {
 
 
 .subsText{
-    width: 78%;
     margin: 0 auto;
     text-align: left;
 }
@@ -60,6 +59,7 @@ html, body {
     font-style: italic;
     font-size: 7vh;
     padding-bottom: 2vh;
+    width: 78%;
     margin: 0 auto;
     border: 2px solid red;
 }
@@ -70,6 +70,7 @@ html, body {
     font-family: "Manrope", sans-serif;
     font-weight: 800;
     font-style: normal;
+    width: 78%;
 }
 
 
@@ -78,6 +79,7 @@ html, body {
     font-family: "Manrope", sans-serif;
     font-weight: 200;
     font-style: normal;
+    width: 78%;
 }
 
 
