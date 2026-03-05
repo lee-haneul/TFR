@@ -18,6 +18,9 @@ html, body {
     --cut: 50px;
 
     height: 90vh;
+    width: min(90vh, 510px);
+
+    margin: 40px auto;
     padding: 20px;
     background: #D9D9D9;
 
@@ -41,8 +44,6 @@ html, body {
 
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    aspect-ratio: 17/30;
 }
 
 
