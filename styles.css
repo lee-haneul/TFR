@@ -73,10 +73,10 @@ html, body {
     content:""; 
     position:absolute; 
 
-    top:-2px;
-    bottom:-2px;
-    left:-8px;
-    right:-8px;
+    top:0;
+    bottom:0;
+    left:-6px;
+    right:-6px;
     
     background:#D20A2E; 
 
