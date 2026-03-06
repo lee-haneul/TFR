@@ -98,7 +98,9 @@ html, body {
     position: absolute;
     top: 76.5%;
     left: 11%;
-    right: 11%;
+    width: 78%;
+    height: 3px;
+    border: none;
 }
 
 .subsImage{
