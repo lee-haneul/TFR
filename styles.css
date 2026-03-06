@@ -66,7 +66,7 @@ html, body {
     margin: 25px 0 0 0;
     padding: 4px 8px;
 
-    z-index:-1;
+    z-index:1;
 }
 
 .subsText h1::before { 
