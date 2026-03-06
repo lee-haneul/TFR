@@ -1,4 +1,4 @@
-const toggleButton = document.getElementById("darkMode");
+const toggle = document.getElementById("darkMode");
 const body = document.body;
 
 
