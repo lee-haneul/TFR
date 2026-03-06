@@ -1,7 +1,11 @@
 body {
     height: 100%;
     margin: 0 auto;
-    background-color: whitesmoke;
+    background-color: var(--bg);
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
 }
 
 #darkModeToggle {
@@ -42,7 +46,7 @@ body.dark-mode {
 
     margin: 40px auto;
     padding: 20px;
-    background: var(--bg);
+    background: var(--panel);
 
     clip-path: polygon(
         var(--cut) 0,                          /* after top-left cut */
