@@ -88,6 +88,9 @@ html, body {
     z-index:-1; 
 }
 
+.subsystemFrame:hover .subsText h1::before { transform:scaleX(1); }
+.subsystemFrame:hover .subsText h1 { color:#D9D9D9; }
+
 
 
 .subsText h2{
