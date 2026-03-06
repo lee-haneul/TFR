@@ -1,6 +1,13 @@
-html, body {
+body {
     height: 100%;
     margin: 0 auto;
+    background-color: #D9D9D9;
+}
+
+body.dark-mode {
+    height: 100%;
+    margin: 0 auto;
+    background-color: #3A3A3A;
 }
 
 
