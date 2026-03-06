@@ -103,7 +103,7 @@ body.dark-mode {
     left: -6px;
     right:-6px;
     
-    background: var(--accent); 
+    background: #D20A2E; 
 
     transform:scaleX(0); 
     transform-origin:left; 
@@ -142,7 +142,7 @@ body.dark-mode {
 .subsBreak{
     width: 100%;
     height: 3px;
-    color: var(--accent);
+    background-color: var(--accent);
     border: none;
     margin: 0;
 }
@@ -150,7 +150,7 @@ body.dark-mode {
 .subsText hr{
     width: 100%;
     height: 3px;
-    color: var(--accent);
+    background-color: var(--accent);
     border: none;
     margin: 13px 0 13px 0;
 }
