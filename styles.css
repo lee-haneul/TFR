@@ -87,7 +87,7 @@ html, body {
     z-index:-1; 
 }
 
-.subsText h1::before { 
+.subsText h1:hover::before { 
     transform:scaleX(1);
 }
 
