@@ -85,8 +85,8 @@ html, body {
     z-index:-1; 
 }
 
-.subsText h1:hover .subsText h1::before { transform:scaleX(1); }
-.subsText h1:hover .subsText h1 { color:#D9D9D9; }
+.subsText h1::before { transform:scaleX(1); }
+.subsText h1:hover { color:#D9D9D9; }
 
 
 
