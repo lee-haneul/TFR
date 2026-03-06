@@ -94,14 +94,7 @@ html, body {
     margin: 13px 0 13px 0;
 }
 
-.tasksBreak{
-    position: absolute;
-    top: 76.5%;
-    left: 11%;
-    width: 78%;
-    height: 3px;
-    border: none;
-}
+
 
 .subsImage{
     width: 100%;
