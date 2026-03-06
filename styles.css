@@ -70,7 +70,7 @@ html, body {
         color 0.35s ease;
 }
 
-.subsystemFrame:hover .subsText h1{
+.subsText:hover .subsText h1{
     background-size: 100% 100%;
     background-color: #D20A2E;
     color: #D9D9D9;
