@@ -61,8 +61,9 @@ html, body {
     font-size: 4.125rem;
     line-height: 1;
     margin: 25px 0 0 0;
+    position: relative;
 
-    background-size: 0% 100%;
+    /*background-size: 0% 100%;
     background-repeat: no-repeat;
 
     transition: 
@@ -70,10 +71,21 @@ html, body {
         color 0.35s ease;
 }
 
-.subsText:hover .subsText h1{
+.subsystemFrame:hover .subsText h1{
     background-size: 100% 100%;
     background-color: #D20A2E;
-    color: #D9D9D9;
+    color: #D9D9D9;*/
+}
+
+.subsText h1::before { 
+    content:""; 
+    position:absolute; 
+    inset:0; 
+    background:#D20A2E; 
+    transform:scaleX(0); 
+    transform-origin:left; 
+    transition:transform .35s ease; 
+    z-index:-1; 
 }
 
 
