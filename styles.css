@@ -4,11 +4,6 @@ body {
     background-color: whitesmoke;
 }
 
-body.dark-mode {
-    background-color: #3A3A3A;
-    color: white;
-}
-
 #darkModeToggle {
     padding: 8px 16px;
     margin: 20px;
@@ -16,6 +11,19 @@ body.dark-mode {
 }
 
 
+:root {
+    --bg: #ffffff;
+    --text: #0A0B0C;
+    --panel: #f3f3f3;
+    --accent: #D20A2E;
+}
+
+body.dark-mode {
+    --bg: #303030;
+    --text: #D9D9D9;
+    --panel: #0A0B0C;
+    --accent: #D20A2E;
+}
 
 @font-face {
   font-family: "Martius";
@@ -34,7 +42,7 @@ body.dark-mode {
 
     margin: 40px auto;
     padding: 20px;
-    background: #D9D9D9;
+    background: var(--bg);
 
     clip-path: polygon(
         var(--cut) 0,                          /* after top-left cut */
@@ -90,7 +98,7 @@ body.dark-mode {
     left: -6px;
     right:-6px;
     
-    background:#D20A2E; 
+    background: var(--accent); 
 
     transform:scaleX(0); 
     transform-origin:left; 
