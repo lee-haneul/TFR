@@ -54,8 +54,6 @@ html, body {
     text-align: left;
 }
 
-
-
 .subsText h1{
     font-family: "Martius", sans-serif;
     font-style: italic;
@@ -74,7 +72,7 @@ html, body {
     font-family: "Manrope", sans-serif;
     font-weight: 200;
     line-height: 1.6;
-    margin: 20px 0;
+    margin: 0;
 }
 
 
