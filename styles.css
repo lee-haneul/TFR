@@ -43,6 +43,7 @@ html, body {
   );
 
     display: flex;
+    position: relative;
     flex-direction: column;
 }
 
@@ -72,7 +73,7 @@ html, body {
     font-family: "Manrope", sans-serif;
     font-weight: 200;
     line-height: 1.6;
-    margin: 0;
+    margin: 10px 0 15px 0;
 }
 
 
@@ -93,7 +94,12 @@ html, body {
     margin: 13px 0 13px 0;
 }
 
-
+.tasksBreak{
+    position: absolute;
+    top: 76.4%;
+    left: 11%;
+    width: 78%;
+}
 
 .subsImage{
     width: 100%;
