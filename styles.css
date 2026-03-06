@@ -83,6 +83,8 @@ html, body {
     transform:scaleX(0); 
     transform-origin:left; 
     transition:transform .5s ease; 
+
+    will-change: transform;
     
     z-index:-1; 
 }
