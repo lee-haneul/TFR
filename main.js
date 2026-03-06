@@ -3,10 +3,10 @@ const body = document.body;
 
 
 if (localStorage.getItem("darkMode") === "enabled") {
-    body.classList.add("darkMode");
+    body.classList.add("dark-Mode");
 }
 
-toggleButton.addEventListener("click", () => {
+toggle.addEventListener("click", () => {
     body.classList.toggle("dark-mode");
 
     // Save preference
