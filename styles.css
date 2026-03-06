@@ -15,7 +15,7 @@ html, body {
 
 
 .subsystemFrame{
-    --cut: 50px;
+    --cut: 60px;
 
     height: 90vh;
     width: min(90vh, 510px);
