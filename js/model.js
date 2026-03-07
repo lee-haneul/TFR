@@ -27,6 +27,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   scene.add(new THREE.AmbientLight(0xffffff, 0.5));
 
+  const geometry = new THREE.BoxGeometry();
+  const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+  const cube = new THREE.Mesh(geometry, material);
+  scene.add(cube);
+
   // load GLB model
   const loader = new GLTFLoader();
 
