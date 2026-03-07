@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
+  gsap.registerPlugin(ScrollTrigger);
+
   const container = document.getElementById("modelContainer");
-
   const scene = new THREE.Scene();
-
   const camera = new THREE.PerspectiveCamera(
     45,
     container.clientWidth / container.clientHeight,

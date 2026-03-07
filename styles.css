@@ -1,14 +1,12 @@
-body {
-  height: 100%;
-  margin: 0 auto;
-}
-
 .modelSection {
   height: 200vh;
+  position: relative;
 }
 
 #modelContainer {
   width: 100%;
-  height: 500px;
-  background: red;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  background: red; /* debug */
 }
