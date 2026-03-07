@@ -28,11 +28,11 @@ document.addEventListener("DOMContentLoaded", () => {
   scene.add(new THREE.AmbientLight(0xffffff, 0.5));
 
   // load GLB model
-  const loader = new THREE.GLTFLoader();
+  const loader = new GLTFLoader();
 
   let model;
 
-  loader.load("assets/testModel.glb", (gltf) => {
+  loader.load("../assets/testModel.glb", (gltf) => {
     model = gltf.scene;
 
     model.scale.set(1, 1, 1); // adjust if needed
