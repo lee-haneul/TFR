@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     startScrollAnimation();
   });
+  console.log(gltf);
 
   // scroll animation
   function startScrollAnimation() {
