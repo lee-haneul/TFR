@@ -3,7 +3,14 @@ body {
   margin: 0 auto;
 }
 
+.modelSection {
+  height: 200vh;
+  position: relative;
+}
+
 #modelContainer {
+  position: sticky;
+  top: 0;
   width: 100%;
-  height: 600px;
+  height: 100vh;
 }
