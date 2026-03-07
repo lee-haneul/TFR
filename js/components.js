@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   for (const element of components) {
     const name = element.dataset.component;
-    const path = `components/${name}.html`;
+    const path = `components/subsystemCards/${name}.html`;
 
     try {
       const response = await fetch(path);
