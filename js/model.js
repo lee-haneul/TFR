@@ -1,76 +1,72 @@
 const container = document.getElementById("modelContainer");
 
-// Scene setup
 const scene = new THREE.Scene();
+
 const camera = new THREE.PerspectiveCamera(
   45,
   container.clientWidth / container.clientHeight,
   0.1,
   1000,
 );
-camera.position.set(0, 0, 3);
 
-const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+camera.position.set(0, 1, 5);
+
+const renderer = new THREE.WebGLRenderer({
+  antialias: true,
+  alpha: true,
+});
+
 renderer.setSize(container.clientWidth, container.clientHeight);
 container.appendChild(renderer.domElement);
 
-// Light
-const light = new THREE.DirectionalLight(0xffffff, 1);
-light.position.set(1, 1, 2);
+// lighting
+const light = new THREE.DirectionalLight(0xffffff, 2);
+light.position.set(5, 5, 5);
 scene.add(light);
 
-// OBJ Loader
-const loader = new THREE.OBJLoader();
+scene.add(new THREE.AmbientLight(0xffffff, 0.5));
+
+// load GLB model
+const loader = new THREE.GLTFLoader();
 
 let model;
 
-loader.load("assets/testModel.obj", (object) => {
-  model = object;
-  model.scale.set(0.5, 0.5, 0.5); // adjust size if needed
+loader.load("assets/testModel.glb", (gltf) => {
+  model = gltf.scene;
+
+  model.scale.set(1, 1, 1); // adjust if needed
+  model.position.set(0, 0, 0);
 
   scene.add(model);
+
+  startScrollAnimation();
 });
 
-// Scroll rotation
-let rotationDone = false;
-window.addEventListener("scroll", () => {
-  if (!model) return;
+// scroll animation
+function startScrollAnimation() {
+  gsap.to(model.rotation, {
+    y: Math.PI * 2,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".modelSection",
+      start: "top top",
+      end: "bottom bottom",
+      scrub: true,
+    },
+  });
+}
 
-  const rect = container.getBoundingClientRect();
-  const windowHeight = window.innerHeight;
-
-  // Check if container is in view
-  if (rect.top < windowHeight && rect.bottom > 0 && !rotationDone) {
-    // Calculate scroll progress in the container (0 to 1)
-    let progress = 1 - rect.bottom / (windowHeight + rect.height);
-    progress = Math.min(Math.max(progress, 0), 1);
-
-    // Rotate one full turn (2*PI radians)
-    model.rotation.y = progress * 2 * Math.PI;
-
-    if (progress >= 1) {
-      rotationDone = true; // stop rotating after one full spin
-    }
-  }
-});
-
-// Animate scene
+// render loop
 function animate() {
   requestAnimationFrame(animate);
   renderer.render(scene, camera);
 }
 
-// Resize handling
+animate();
+
+// resize fix
 window.addEventListener("resize", () => {
   camera.aspect = container.clientWidth / container.clientHeight;
   camera.updateProjectionMatrix();
   renderer.setSize(container.clientWidth, container.clientHeight);
-});
-
-camera.position.z = 10;
-model.scale.set(0.1, 0.1, 0.1);
-model.traverse(function (child) {
-  if (child.isMesh) {
-    child.material = new THREE.MeshStandardMaterial({ color: 0xffffff });
-  }
 });
