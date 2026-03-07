@@ -30,7 +30,7 @@ body.dark-mode {
 
 @font-face {
   font-family: "Martius";
-  src: url("fonts/Martius-LV9L4.ttf") format("truetype");
+  src: url("assets/fonts/Martius-LV9L4.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
