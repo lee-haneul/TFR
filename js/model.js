@@ -66,3 +66,9 @@ window.addEventListener("resize", () => {
   camera.updateProjectionMatrix();
   renderer.setSize(container.clientWidth, container.clientHeight);
 });
+
+model.traverse(function (child) {
+  if (child.isMesh) {
+    child.material = new THREE.MeshStandardMaterial({ color: 0xffffff });
+  }
+});
