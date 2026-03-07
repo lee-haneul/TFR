@@ -2,3 +2,8 @@ body {
   height: 100%;
   margin: 0 auto;
 }
+
+#modelContainer {
+  width: 100%;
+  height: 600px;
+}
