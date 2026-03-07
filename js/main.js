@@ -1,13 +1,14 @@
+// main.js
 document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.getElementById("darkModeToggle");
   const body = document.body;
 
-  // Load saved preference
+  // Load saved dark mode preference
   if (localStorage.getItem("darkMode") === "enabled") {
     body.classList.add("dark-mode"); // fixed capitalization
   }
 
-  // Add click listener
+  // Click listener
   if (toggle) {
     toggle.addEventListener("click", () => {
       body.classList.toggle("dark-mode");
