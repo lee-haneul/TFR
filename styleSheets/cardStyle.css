@@ -17,13 +17,13 @@ body {
 :root {
   --bg: #ffffff;
   --text: #0a0b0c;
-  --panel: #f3f3f3;
+  --panel: #d9d9d9;
   --accent: #0a0b0c;
 }
 
 body.dark-mode {
   --bg: #303030;
-  --text: #d9d9d9;
+  --text: #f3f3f3;
   --panel: #0a0b0c;
   --accent: #d20a2e;
 }
