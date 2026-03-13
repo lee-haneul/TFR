@@ -1,3 +1,33 @@
+body {
+  height: 100%;
+  margin: 0 auto;
+  background-color: var(--bg);
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+#darkModeToggle {
+  padding: 8px 16px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+:root {
+  --bg: #ebebeb;
+  --text: #0a0b0c;
+  --panel: #d9d9d9;
+  --accent: #0a0b0c;
+}
+
+body.dark-mode {
+  --bg: #303030;
+  --text: #f3f3f3;
+  --panel: #0a0b0c;
+  --accent: #d20a2e;
+}
+
 @font-face {
   font-family: "Martius";
   src: url("../assets/fonts/Martius-LV9L4.ttf") format("truetype");
