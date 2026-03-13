@@ -23,7 +23,5 @@ body {
 
 .hex-bg {
   height: 100vh;
-  background-image: url("hex.svg");
-  background-size: 60px 52px;
   background: red;
 }
