@@ -11,6 +11,16 @@
   background: red; /* debug */
 }
 
+body {
+  height: 100%;
+  margin: 0 auto;
+  background-color: var(--bg);
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
 .hex-bg {
   height: 100vh;
 
