@@ -12,42 +12,69 @@
 }
 
 body {
+  margin: 0;
+}
+
+.hex-background {
+  height: 100vh;
+  width: 100%;
+
   background:
-    radial-gradient(
-        circle farthest-side at 0% 50%,
-        #fb1 23.5%,
-        rgba(240, 166, 17, 0) 0
-      )
-      21px 30px,
-    radial-gradient(
-        circle farthest-side at 0% 50%,
-        #b71 24%,
-        rgba(240, 166, 17, 0) 0
-      )
-      19px 30px,
     linear-gradient(
-        150deg,
-        #fb1 24%,
-        #b71 0,
-        #b71 26%,
-        rgba(240, 166, 17, 0) 0,
-        rgba(240, 166, 17, 0) 74%,
-        #b71 0,
-        #b71 76%,
-        #fb1 0
-      )
-      0 0,
+      30deg,
+      #444 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #444 87.5%,
+      #444
+    ),
     linear-gradient(
-        30deg,
-        #fb1 24%,
-        #b71 0,
-        #b71 26%,
-        rgba(240, 166, 17, 0) 0,
-        rgba(240, 166, 17, 0) 74%,
-        #b71 0,
-        #b71 76%,
-        #fb1 0
-      )
-      0 0,
-    #fb1;
+      150deg,
+      #444 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #444 87.5%,
+      #444
+    ),
+    linear-gradient(
+      30deg,
+      #444 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #444 87.5%,
+      #444
+    ),
+    linear-gradient(
+      150deg,
+      #444 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #444 87.5%,
+      #444
+    ),
+    linear-gradient(
+      60deg,
+      #777 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #777 75%,
+      #777
+    ),
+    linear-gradient(
+      60deg,
+      #777 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #777 75%,
+      #777
+    );
+
+  background-size: 80px 140px;
+  background-position:
+    0 0,
+    0 0,
+    40px 70px,
+    40px 70px,
+    0 0,
+    40px 70px;
 }
