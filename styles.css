@@ -11,6 +11,10 @@
   background: red; /* debug */
 }
 
+:root {
+  --bg: #ebebeb;
+}
+
 body {
   height: 100%;
   margin: 0 auto;
