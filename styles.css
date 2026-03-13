@@ -23,12 +23,6 @@ body {
 
 .hex-bg {
   height: 100vh;
-
-  background-image: url("data:image/svg+xml,\
-  <svg xmlns='http://www.w3.org/2000/svg' width='60' height='52'>\
-  <polygon points='30,0 60,15 60,37 30,52 0,37 0,15' \
-  fill='none' stroke='gray' stroke-width='2'/>\
-  </svg>");
-
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='52' viewBox='0 0 60 52'%3E%3Cpolygon points='30,1 59,15 59,37 30,51 1,37 1,15' fill='none' stroke='%23666' stroke-width='2'/%3E%3C/svg%3E");
   background-size: 60px 52px;
 }
